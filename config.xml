@@ -33,7 +33,9 @@
     
     <preference name="android-minSdkVersion" value="21" />
     <preference name="android-installLocation" value="auto" />
-    
+    <feature name="Geolocation">
+    <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+</feature>
    
       
        <platform name="android">
