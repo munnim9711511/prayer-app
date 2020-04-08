@@ -1,7 +1,21 @@
 $(() => {
 
-   
-    
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            console.log(position.coords.latitude);
+            console.log(position.coords.longitude);
+            var d = new Date();
+            var m = d.getMonth() + 1;
+            $.ajax({
+                method: "GET",
+                url: `http://api.aladhan.com/v1/calendar?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}&method=2&month=${m}&year=${d.getFullYear()}`
+            }).then((data) => {
+                console.log(data)
+            })
+
+        })
+
+    }
     $("#idablu").on("click", () => {
         $("#main").addClass("d-none");
         $("#prayer").addClass("d-none");

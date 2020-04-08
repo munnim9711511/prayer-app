@@ -12,12 +12,12 @@
           abdul munnim
     </author>
     
-   
+   <feature name="http://api.phonegap.com/1.0/geolocation"/>
     <platform name="android"/>
    
     <preference name="phonegap-version" value="cli-6.5.0" />
-    <preference name="orientation" value="portrait" />
-    <preference name="orientation" value="landscape" />
+    <preference name="orientation" value="default" />
+  
     <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
@@ -68,5 +68,5 @@
         <allow-intent href="itms:*"/>
         <allow-intent href="itms-apps:*"/>
       </platform>
-      <plugin name="cordova-plugin-whitelist" spec="1.3.4" />
+   
 </widget>
