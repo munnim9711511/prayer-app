@@ -15,7 +15,7 @@
    <feature name="http://api.phonegap.com/1.0/geolocation"/>
     <platform name="android"/>
    
-    <preference name="phonegap-version" value="cli-8.0.0" />
+    <preference name="phonegap-version" value="cli-7.1.0 " />
     <preference name="orientation" value="default" />
   
     <preference name="fullscreen" value="false" />
